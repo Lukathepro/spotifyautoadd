@@ -17,9 +17,6 @@ function ScrollArea({
   )
 }
 
-function ScrollBar({ className, orientation = "vertical", ...props }: React.HTMLAttributes<HTMLDivElement> & { orientation?: "vertical" | "horizontal" }) {
-  // No-op — native scrollbar is used instead
-  return null
-}
 
-export { ScrollArea, ScrollBar }
+
+export { ScrollArea }

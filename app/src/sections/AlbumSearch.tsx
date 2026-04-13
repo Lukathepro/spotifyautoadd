@@ -265,7 +265,11 @@ export function AlbumSearch() {
                         <div>
                           <p className="text-xs font-bold uppercase tracking-widest mb-1"
                              style={{ color: 'var(--green)', fontFamily: 'Syne, sans-serif' }}>
-                            {selected.album_type === 'single' ? 'Singl' : selected.album_type === 'ep' ? 'EP' : 'Album'}
+                            {selected.album_type === 'single'
+                                ? 'Singl'
+                                : selected.album_type === 'compilation'
+                                    ? 'Compilation'
+                                    : 'Album'}
                           </p>
                           <DialogTitle className="text-2xl font-black text-white mb-1 leading-tight"
                                        style={{ fontFamily: 'Syne, sans-serif', letterSpacing: '-0.03em' }}>
@@ -307,7 +311,7 @@ export function AlbumSearch() {
                           </div>
                       ) : (
                           <div className="space-y-px">
-                            {tracks.map((track, idx) => {
+                            {tracks.map((track) => {
                               const { main, feat } = splitArtists(track, albumArtistIds);
                               const isPlaying = playingId === track.id;
                               const isAdded   = addedIds.has(track.id);

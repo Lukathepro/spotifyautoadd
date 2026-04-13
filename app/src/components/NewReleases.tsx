@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Dialog, DialogContent, DialogTitle } from '@/components/ui/dialog';
 import { ScrollArea } from '@/components/ui/scroll-area';
 import {
-  Sparkles, Disc3, Music2, Calendar, User,
+  Sparkles, Disc3, Music2, Calendar,
   Plus, Check, ExternalLink, RefreshCw, Play, Pause
 } from 'lucide-react';
 import { spotifyService } from '@/services/spotify';

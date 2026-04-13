@@ -7,7 +7,6 @@ import { Dashboard } from '@/sections/Dashboard';
 import { ArtistManager } from '@/sections/ArtistManager';
 import { AlbumSearch } from '@/sections/AlbumSearch';
 import { Settings } from '@/sections/Settings';
-import { AudioPlayer } from '@/components/AudioPlayer';
 import { Statistics } from '@/components/Statistics';
 import { Notifications } from '@/components/Notifications';
 import { NewReleases } from '@/components/NewReleases';
@@ -184,7 +183,7 @@ function AppContent() {
           </Tabs>
         </main>
 
-        <AudioPlayer />
+
       </div>
   );
 }
