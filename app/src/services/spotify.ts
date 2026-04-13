@@ -14,7 +14,7 @@ const SPOTIFY_AUTH_URL = 'https://accounts.spotify.com/authorize';
 const SPOTIFY_TOKEN_URL = 'https://accounts.spotify.com/api/token';
 
 const CLIENT_ID = '03d2ac4cdd154f79bd23c87900bf5183';
-const REDIRECT_URI = 'https://69dd55de2dc07125e8630263--joyful-platypus-1a37a2.netlify.app/callback';
+const REDIRECT_URI = 'https://joyful-platypus-1a37a2.netlify.app/callback';
 const SCOPES = [
   'user-read-private',
   'user-read-email',
